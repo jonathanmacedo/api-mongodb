@@ -6,6 +6,9 @@
   "repository": "https://github.com/jonathanmacedo/api-mongodb.git",
   "author": "Jonathan Macedo Castro <macedojc04@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
   "dependencies": {
     "express": "^4.18.1"
   },
