@@ -1,0 +1,17 @@
+{
+  "name": "api-banco-de-dados",
+  "version": "1.0.0",
+  "description": "API com conexão com Banco de Dados MongoDB",
+  "main": "server.js",
+  "repository": "https://github.com/jonathanmacedo/api-mongodb.git",
+  "author": "Jonathan Macedo Castro <macedojc04@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "mongoose": "^6.4.0",
+    "nodemon": "^2.0.16"
+  }
+}
