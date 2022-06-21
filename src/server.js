@@ -3,7 +3,7 @@ const express = require('express')
 const app = express();
 require('dotenv').config()
 const port = process.env.PORT || 5000
-// const rotas = require('./routes/router')
+const rotas = require('./routes/router')
 
 
 // Usando os componentes do desenvolvimento
@@ -13,11 +13,8 @@ app.use(
     })
 )
 app.use(express.json())
-// app.use('/collaborator', rotas)
+app.use('/collaborator', rotas)
 
-app.get('/', (request, response) => {
-    response.json({ messege: "Oi Express!" })
-})
 
 // Configuração Banco de Dados
 const mongoose = require('mongoose')
