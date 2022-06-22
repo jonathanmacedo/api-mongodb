@@ -3,8 +3,7 @@ const express = require('express')
 const app = express();
 require('dotenv').config()
 const port = process.env.PORT || 5000
-const rotas = require('./routes/router')
-
+const routes = require('./routes/router')
 
 // Usando os componentes do desenvolvimento
 app.use(
@@ -13,11 +12,11 @@ app.use(
     })
 )
 app.use(express.json())
-app.use('/collaborator', rotas)
+app.use(routes)
 
 
 // Configuração Banco de Dados
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 mongoose
     .connect(
         `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@apicluster.2urjbbg.mongodb.net/?retryWrites=true&w=majority`
